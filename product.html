@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/single-product.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="">
+        <div class="header-head-section">
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-md-6 d-flex justify-content-end">
+              <span class="navbar-text mx-4"
+                ><a class="text-decoration-none lh-1" href="./"
+                  >Become a seller</a
+                ></span
+              >
+              <span class="navbar-text mx-4"
+                ><a class="text-decoration-none" href="./"
+                  >Help & support</a
+                ></span
+              >
+              <span class="navbar-text mx-4">
+                <a class="text-decoration-none" href="./login.html"
+                  >Login</a
+                ></span
+              >
+              <span class="navbar-text mx-4"
+                ><a class="text-decoration-none" href="./signup.html"
+                  >Sing Up</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Start Here -->
+      <nav class="navbar justify-content-start py-sm-4 navbar-expand-lg bk-nav">
+        <div class="col-md-3">
+          <a class="navbar-brand" href="/"
+            ><img class="nav-logo" src="./assets/products/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="col-md-6">
+          <div class="search-bar">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control px-2 py-0"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn search-icon" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <a
+            class="fs-5"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa fa-shopping-cart ms-4" style="color: black"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <!-- offcanvas cart -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          Shopping Cart
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./assets/products/product1.jpg" width="80%" alt="" />
+          </div>
+          <div class="col-md-8">
+            <h5>Tenda Router 500hz</h5>
+            <div class="cart-product-price">
+              <span>Tk. 900</span>
+            </div>
+            <div class="add-remove-cart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bk-product-shop mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div>
+              <img
+                class="product-image"
+                src="./assets/products/product1.jpg"
+                alt=""
+                srcset=""
+              />
+            </div>
+            <div class="variation-images overflow-hidden mt-3">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="./assets/products/product1.jpg"
+                    width="auto"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                </div>
+                <div class="col-md-4">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="product-content">
+              <h1 class="product-title">Zafran Saffron Soap 90g</h1>
+              <div class="d-flex product-category">
+                <p class="fw-medium">
+                  Category :
+                  <span class="fw-light">
+                    ZafranMore Bath & Body from Zafran</span
+                  >
+                </p>
+              </div>
+              <div class="product-price-regular mt-4">
+                <span>৳</span>
+                <span>160</span>
+              </div>
+              <div class="product-price-original d-flex">
+                <div class="text-decoration-line-through">
+                  <span>৳</span>
+                  <span>190</span>
+                </div>
+                <div class="discount">
+                  <span>-20%</span>
+                </div>
+              </div>
+              <div class="bk-single-product-buy text-center mt-3">
+                <div class="bk-add-to-cart">
+                  <a
+                    href=""
+                    class="d-block py-2 text-white text-decoration-none"
+                    >Add to Cart</a
+                  >
+                </div>
+                <div class="bk-buy-now mt-2">
+                  <a
+                    href=""
+                    class="d-block py-2 text-black text-decoration-none"
+                    >Buy Now</a
+                  >
+                </div>
+              </div>
+              <div class="product-description mt-3">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item rounded-0 border border-0">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button border-bottom collapsed bg-white shadow-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree"
+                      >
+                        Description
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseThree"
+                      class="accordion-collapse collapse"
+                    >
+                      <div class="accordion-body">
+                        <strong>Lorem ipsum dolor sit amet consectetur.</strong>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad iure tenetur, officiis nihil ipsum provident
+                        perferendis odit, incidunt veritatis corrupti tempora
+                        est, cumque error sint? Ex impedit quidem ea numquam in
+                        nihil eius ipsa officiis? Adipisci, velit. Delectus vel
+                        minus quia voluptatem dolor facilis sapiente at
+                        provident ad eligendi praesentium natus nobis laboriosam
+                        pariatur perspiciatis, cumque dignissimos est sed fuga
+                        distinctio soluta impedit! Consequatur voluptates aut
+                        dolore cumque repellat, quibusdam explicabo similique
+                        expedita amet deleniti culpa consequuntur hic
+                        praesentium esse fuga cupiditate non nisi veritatis
+                        dolorem beatae saepe sit rem tenetur aspernatur. Laborum
+                        quaerat corrupti incidunt nobis quasi doloribus quo
+                        reiciendis consequuntur praesentium officia eum
+                        blanditiis inventore quia, a est veritatis. Quam sunt
+                        quia iure eos, vero voluptates, rerum, iusto ipsum omnis
+                        magni corrupti necessitatibus? Esse, ex! Voluptate
+                        adipisci ipsum minus, odio similique autem explicabo
+                        excepturi error, debitis velit eos labore veritatis
+                        praesentium laboriosam repellat, pariatur beatae!
+                        Similique, perferendis? Vero recusandae sint doloribus
+                        officia facilis temporibus explicabo ipsum. Animi ex
+                        dolores explicabo. Cupiditate tempora tenetur dolorem
+                        nihil culpa soluta, debitis ullam repellat ratione
+                        obcaecati deleniti vel incidunt nesciunt officiis facere
+                        ipsa veniam assumenda distinctio quos, ipsum delectus
+                        quisquam ipsam non ut! Molestiae esse hic doloremque
+                        harum temporibus ea quo animi?
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-product mt-3">
+                <h4 class="fw-normal fs-5">
+                  <strong
+                    >আমাদের যে কোন পণ্য অর্ডার করতে কল বা WhatsApp করুন:</strong
+                  >
+                </h4>
+                <div class="contact-number">
+                  <a
+                    href="tel:01934600530"
+                    class="fw-light d-block text-black text-decoration-none fs-5"
+                    >+8801934600530</a
+                  >
+                  <a
+                    href="tel:01934600530"
+                    class="fw-light text-black text-decoration-none fs-5"
+                    >+8801934600530</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bk-icon-box mt-5 py-5 bg-dark-secoundary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="safe-payment d-flex">
+              <img
+                src="./assets/icon/credit-card.png"
+                class="safe-payment-icon"
+              />
+              <div class="icon-desc text-center mx-4 mt-4">
+                <h3 class="icon-text">Safe Payment</h3>
+                <p>বিভিন্ন পেমেন্ট পদ্ধতি থেকে বেছে নিন</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="safe-payment d-flex">
+              <img
+                src="./assets/icon/fast-delivery.png"
+                class="safe-payment-icon"
+              />
+              <div class="icon-desc text-center mx-4 mt-4">
+                <h3 class="icon-text">Safe Payment</h3>
+                <p>বিভিন্ন পেমেন্ট পদ্ধতি থেকে বেছে নিন</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="safe-payment d-flex">
+              <img
+                src="./assets/icon/credit-card.png"
+                class="safe-payment-icon"
+              />
+              <div class="icon-desc text-center mx-4 mt-4">
+                <h3 class="icon-text">Safe Payment</h3>
+                <p>বিভিন্ন পেমেন্ট পদ্ধতি থেকে বেছে নিন</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-4">
+      <div class="mx-4">
+        <h2 class="Product_section">You Might Also Like</h2>
+        <div class="p-4">
+          <div class="mt-2">
+            <div class="row mb-4">
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <img src="./assets/products/product1.jpg" alt="" srcset="" />
+                  <div class="card-body fs_card_body py-2 text-center">
+                    <p class="fs-6 mb-2">Realme C61 (6/128) Smartphone</p>
+                    <div class="fs-6">
+                      <span>৳400 </span
+                      ><span class="text-decoration-line-through"> ৳500</span>
+                    </div>
+
+                    <div class="mt-2">
+                      <a
+                        type="button"
+                        class="d-block related-product-add-cart border-black ms-2 me-2 btn"
+                      >
+                        Quick Add
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="load_more text-center">
+            <a
+              href="./loadmore"
+              class="border text-decoration-none border-black px-5 py-2"
+              >LOAD MORE</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bikaton</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header Start Here -->
+
+    <header>
+      <nav class="">
+        <div class="header-head-section">
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-md-6 d-flex justify-content-end">
+              <span class="navbar-text mx-4"
+                ><a class="text-decoration-none lh-1" href="./"
+                  >Become a seller</a
+                ></span
+              >
+              <span class="navbar-text mx-4"
+                ><a class="text-decoration-none" href="./"
+                  >Help & support</a
+                ></span
+              >
+              <span class="navbar-text mx-4">
+                <a class="text-decoration-none" href="./login.html"
+                  >Login</a
+                ></span
+              >
+              <span class="navbar-text mx-4"
+                ><a class="text-decoration-none" href="./signup.html"
+                  >Sing Up</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Start Here -->
+      <nav class="navbar justify-content-start py-sm-4 navbar-expand-lg bk-nav">
+        <div class="col-md-3">
+          <a class="navbar-brand" href="/"
+            ><img class="nav-logo" src="./assets/products/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="col-md-6">
+          <div class="search-bar">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control px-2 py-0"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn search-icon" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <a
+            class="fs-5"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa fa-shopping-cart ms-4" style="color: black"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <!-- offcanvas cart -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          Shopping Cart
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./assets/products/product1.jpg" width="80%" alt="" />
+          </div>
+          <div class="col-md-8">
+            <h5>Tenda Router 500hz</h5>
+            <div class="cart-product-price">
+              <span>Tk. 900</span>
+            </div>
+            <div class="add-remove-cart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End Here -->
+    <!-- Slider Start Here -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/Cover1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/Cover2.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Category Curosel -->
+    <section class="category-Curosel">
+      <div class="category-show">
+        <div class="row px-sm-4 py-sm-5">
+          <div class="col text-center cursal-category align-self-center">
+            <img
+              class="rounded-circle"
+              src="./assets/products/product1.jpg"
+              width="70%"
+              alt=""
+            />
+            <div class="category-desc mt-2">
+              <p class="d-block">Books</p>
+            </div>
+          </div>
+          <div class="col text-center cursal-category align-self-center">
+            <img
+              class="rounded-circle"
+              src="./assets/products/product2.jpg"
+              width="70%"
+              alt=""
+            />
+            <div class="category-desc mt-2">
+              <p class="d-block">Household Festival</p>
+            </div>
+          </div>
+          <div class="col text-center cursal-category align-self-center">
+            <img
+              class="rounded-circle"
+              src="./assets/products/product3.jpg"
+              width="70%"
+              alt=""
+            />
+            <div class="category-desc mt-2">
+              <p class="d-block">Special Weekly Offer</p>
+            </div>
+          </div>
+          <div class="col text-center cursal-category align-self-center">
+            <img
+              class="rounded-circle"
+              src="./assets/products/product4.jpg"
+              width="70%"
+              alt=""
+            />
+            <div class="category-desc mt-2">
+              <p class="d-block">Building Materials</p>
+            </div>
+          </div>
+          <div class="col text-center cursal-category align-self-center">
+            <img
+              class="rounded-circle"
+              src="./assets/products/product1.jpg"
+              width="70%"
+              alt=""
+            />
+            <div class="category-desc mt-2">
+              <p class="d-block" style="text-overflow: ellipsis">
+                Home & Living
+              </p>
+            </div>
+          </div>
+          <div class="col text-center cursal-category align-self-center">
+            <img
+              class="rounded-circle"
+              src="./assets/products/product2.jpg"
+              width="70%"
+              alt=""
+            />
+            <div class="category-desc mt-2">
+              <p class="d-block">Super Offers</p>
+            </div>
+          </div>
+          <div class="col text-center cursal-category align-self-center">
+            <img
+              class="rounded-circle"
+              src="./assets/products/product4.jpg"
+              width="70%"
+              alt=""
+            />
+            <div class="category-desc mt-2">
+              <p class="d-block">Books</p>
+            </div>
+          </div>
+          <div class="col text-center cursal-category align-self-center">
+            <img
+              class="rounded-circle"
+              src="./assets/products/product1.jpg"
+              width="70%"
+              alt=""
+            />
+            <div class="category-desc mt-2">
+              <p class="d-block">Books</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sales Flash Section Start Here -->
+
+    <section class="mt-4">
+      <div class="container bg-light p-sm-4">
+        <p class="sales_flash fs-4">Flash Sale</p>
+        <div class="sales_flash_section">
+          <div class="sale_flash_head d-flex fs-6">
+            <p class="fw-medium">On Sale Now</p>
+            <a
+              href="./shop.html"
+              class="text-decoration-none border sale_flash_shop_btn mb-1 py-1 px-3 fs-6"
+              ><span>Shop All Products</span></a
+            >
+          </div>
+          <div class="sales_flash_products mt-2">
+            <div class="row">
+              <div class="col px-0">
+                <div class="card p-2">
+                  <img
+                    height="175px"
+                    src="./assets/products/product1.jpg"
+                    height="auto"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="card-body fs_card_body text-center mt-3">
+                    <p class="sale_flash_product-title mb-2">
+                      Realme C61 (6/128) Smartphone
+                    </p>
+                    <div class="fs-card-price">
+                      <span>৳</span>
+                      <span>450</span>
+                    </div>
+                    <div class="fs-card-price-origianl mt-2">
+                      <span>৳</span>
+                      <span>500</span>
+                    </div>
+                    <div
+                      class="add-to-cart-btn text-center borders-dark mt-4 mb-3"
+                    >
+                      <a
+                        href=""
+                        class="text-decoration-none border sale_flash_shop_btn py-2 px-3"
+                        >Quick Add</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col px-0">
+                <div class="card p-2">
+                  <img
+                    src="./assets/products/product3.jpg"
+                    height="175px"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="card-body fs_card_body text-center mt-3">
+                    <p class="sale_flash_product-title mb-2">
+                      Realme C61 (6/128) Smartphone
+                    </p>
+                    <div class="fs-card-price">
+                      <span>৳</span>
+                      <span>450</span>
+                    </div>
+                    <div class="fs-card-price-origianl mt-2">
+                      <span>৳</span>
+                      <span>500</span>
+                    </div>
+                    <div
+                      class="add-to-cart-btn text-center borders-dark mt-4 mb-3"
+                    >
+                      <a
+                        href=""
+                        class="text-decoration-none border sale_flash_shop_btn py-2 px-3"
+                        >Quick Add</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col px-0">
+                <div class="card p-2">
+                  <img
+                    src="./assets/products/product3.jpg"
+                    height="175px"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="card-body fs_card_body text-center mt-3">
+                    <p class="sale_flash_product-title mb-2">
+                      Realme C61 (6/128) Smartphone
+                    </p>
+                    <div class="fs-card-price">
+                      <span>৳</span>
+                      <span>450</span>
+                    </div>
+                    <div class="fs-card-price-origianl mt-2">
+                      <span>৳</span>
+                      <span>500</span>
+                    </div>
+                    <div
+                      class="add-to-cart-btn text-center borders-dark mt-4 mb-3"
+                    >
+                      <a
+                        href=""
+                        class="text-decoration-none border sale_flash_shop_btn py-2 px-3"
+                        >Quick Add</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col px-0">
+                <div class="card p-2">
+                  <img
+                    src="./assets/products/product3.jpg"
+                    height="175px"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="card-body fs_card_body text-center mt-3">
+                    <p class="sale_flash_product-title mb-2">
+                      Realme C61 (6/128) Smartphone
+                    </p>
+                    <div class="fs-card-price">
+                      <span>৳</span>
+                      <span>450</span>
+                    </div>
+                    <div class="fs-card-price-origianl mt-2">
+                      <span>৳</span>
+                      <span>500</span>
+                    </div>
+                    <div
+                      class="add-to-cart-btn text-center borders-dark mt-4 mb-3"
+                    >
+                      <a
+                        href=""
+                        class="text-decoration-none border sale_flash_shop_btn py-2 px-3"
+                        >Quick Add</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col px-0 d-none d-sm-block">
+                <div class="card p-2">
+                  <img
+                    height="175px"
+                    src="./assets/products/product2.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="card-body fs_card_body text-center mt-3">
+                    <p class="sale_flash_product-title mb-2">
+                      Realme C61 (6/128) Smartphone
+                    </p>
+                    <div class="fs-card-price">
+                      <span>৳</span>
+                      <span>450</span>
+                    </div>
+                    <div class="fs-card-price-origianl mt-2">
+                      <span>৳</span>
+                      <span>500</span>
+                    </div>
+                    <div
+                      class="add-to-cart-btn text-center borders-dark mt-4 mb-3"
+                    >
+                      <a
+                        href=""
+                        class="text-decoration-none border sale_flash_shop_btn py-2 px-3"
+                        >Quick Add</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hot Deal Section Start Here -->
+    <section class="mt-5">
+      <div class="container px-sm-5">
+        <p class="fs-4">Hot Deals of the Day</p>
+        <div class="category-section">
+          <div class="row justify-content-around">
+            <div class="col-md-5 d-block d-sm-flex hot-deal-product px-4 py-4">
+              <img
+                width="100%"
+                src="./assets/products/product2.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="product-desc align-self-center mx-4">
+                <h4>Star Queen Kitchen Rack 5 Step with Tray-P & W-TEL</h4>
+                <div class="price mb-3">
+                  <span>$150</span>
+                  <span class="text-decoration-line-through border-black"
+                    >$200</span
+                  >
+                </div>
+                <a
+                  href=""
+                  class="text-decoration-none border sale_flash_shop_btn py-2 px-3 px-5"
+                  >Quick Add</a
+                >
+              </div>
+            </div>
+            <div class="col-md-5 d-block d-sm-flex hot-deal-product px-4 py-4">
+              <img
+                width="100%"
+                src="./assets/products/product4.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="product-desc align-self-center mx-4">
+                <h4>Star Queen Kitchen Rack 5 Step with Tray-P & W-TEL</h4>
+                <div class="price mb-3">
+                  <span>$150</span>
+                  <span class="text-decoration-line-through border-black"
+                    >$200</span
+                  >
+                </div>
+                <a
+                  href=""
+                  class="text-decoration-none border sale_flash_shop_btn py-2 px-3 px-5"
+                  >Quick Add</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Just For you Section Start here -->
+    <section class="mt-4">
+      <div class="container">
+        <p class="Product_section fs-3">Just For You</p>
+        <div class="products_section bg-light p-sm-4">
+          <div class="sales_flash_products mt-2">
+            <div class="row mb-4">
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product3.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product2.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product3.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product2.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col d-none d-sm-block">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product2.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product3.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product2.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product3.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product2.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col d-none d-sm-block">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product2.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product3.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product2.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product3.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="just-for-you-col col">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product2.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col d-none d-sm-block">
+                <a href="" class="text-decoration-none">
+                  <div class="card">
+                    <img
+                      src="./assets/products/product2.jpg"
+                      height="175px"
+                      alt=""
+                      srcset=""
+                    />
+                    <div class="card-body fs_card_body">
+                      <p class="fs-5 mb-3 fw-medium">
+                        Realme C61 (6/128) Smartphone
+                      </p>
+                      <div class="fs-5">
+                        <span>৳</span>
+                        <span>450</span>
+                      </div>
+                      <div class="fs-card-price-origianl pb-2">
+                        <span>৳</span>
+                        <span>500</span>
+                      </div>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="load_more text-center">
+            <a
+              href="./loadmore"
+              class="border sale_flash_shop_btn text-decoration-none border-black px-5 py-2"
+              >LOAD MORE</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+      <div class="">
+        <div class="row p-5">
+          <div class="col-md-4">
+            <h3>Customer Care</h3>
+            <ul>
+              <li>Help Center</li>
+              <li>How to Buy</li>
+              <li>Return & Refunds</li>
+              <li>Contact US</li>
+              <li>Terms & Conditation</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Company</h3>
+            <ul>
+              <li>About Us</li>
+              <li>Become a Seller</li>
+              <li>Shop</li>
+              <li>My Account</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2>biketon</h2>
+            <p>Got Question? Call us 9 AM- 10 PM</p>
+            <a
+              class="text-decoration-none text-dark fw-medium fs-5"
+              href="tel:+8801934600530"
+              >+8801934600530</a
+            >
+            <p class="fs-5 mt-2">Follow Us</p>
+            <div class="social-icon text-dark justify-content-around w-50">
+              <a href="./"
+                ><i class="fa fa-facebook" class="" aria-hidden="true"></i
+              ></a>
+              <a href="./"
+                ><i class="fa fa-instagram" class="" aria-hidden="true"></i
+              ></a>
+              <a href="./"
+                ><i class="fa fa-youtube" class="" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center border-top">
+          <p>
+            Developed & Created By
+            <a
+              href="https://www.abdulwahids.com"
+              class="text-dark text-decoration-none"
+              >Abdul Wahid</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

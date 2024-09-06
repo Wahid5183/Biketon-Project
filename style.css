@@ -1,0 +1,139 @@
+body {
+  background-color: #fafafa;
+}
+li {
+  list-style-type: none;
+}
+.search_form {
+  width: 488px;
+}
+:root {
+  --color: #1898ec;
+}
+/* Nav Bar */
+@media only screen and (max-width: 768px) {
+  .navbar-text {
+    font-size: 8px;
+  }
+}
+.header-head-section {
+  background-color: #1898ec;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.bk-nav {
+  background-color: #1898ec;
+}
+.nav-logo {
+  width: 150px;
+}
+@media only screen and (max-width: 768px) {
+  .nav-logo {
+    width: 78px;
+  }
+}
+
+.search-icon {
+  margin-left: -50px;
+}
+/* Sales Flash Section */
+/* Cursal  style*/
+
+body {
+  background: #333;
+  color: #ddd;
+}
+h1 {
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.card {
+  padding-bottom: 10px;
+}
+
+.sales_flash {
+  font-size: 22px;
+  color: black;
+  font-weight: 400;
+}
+
+.sale_flash_product-title {
+  font-size: 20px;
+  line-height: 100%;
+  margin-bottom: 3px !important;
+  overflow: hidden;
+  color: #000000;
+  overflow: hidden;
+  cursor: pointer;
+  font-weight: 500;
+}
+.sale_flash_head {
+  justify-content: space-between;
+  border-bottom: 2px solid #d5d5d5;
+}
+.sale_flash_shop_btn:hover {
+  background-color: #1898ec;
+  transition: 0.2s ease;
+
+  border: 2px solid rgb(0, 0, 0) !important;
+  color: #ffffff;
+}
+.sale_flash_shop_btn {
+  border-radius: 5px;
+  color: black;
+}
+.fs-card-price-origianl {
+  text-decoration: line-through;
+}
+.fs_card_body {
+  padding: 0 !important;
+  margin: 4px 8px 0;
+}
+.fs-card-price {
+  line-height: 20px;
+  font-size: 18px;
+}
+.fs-card-price-origianl {
+  color: #9e9e9e;
+  line-height: 12px;
+  font-size: 14px;
+}
+/* 
+Category cursal section
+*/
+.category-desc {
+  font-size: 15px;
+}
+
+/* hot deal section */
+
+.hot-deal-product:hover {
+  border: 2px solid #1898ec;
+  transition: 0.3s ease;
+}
+.hot-deal-product {
+  border: 2px solid #b3afaf;
+}
+/* Just For You Section */
+@media only screen and (max-width: 768px) {
+  .just-for-you-col {
+    padding-right: 0px !important;
+  }
+}
+
+/* Footer Section */
+.social-icon {
+  font-size: 28px;
+  display: flex;
+}
+.cursal-category:hover > img {
+  border: 10px solid white;
+  box-shadow: 1px 3px 9px #868484;
+  transition: 0.2s ease;
+}
